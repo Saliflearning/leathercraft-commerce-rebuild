@@ -4,6 +4,8 @@
 
 An evidence-bounded case study and clean-room reconstruction of a multi-year web-learning journey. It pairs an honest critique of three historical project phases with a new, accessible React commerce demonstration.
 
+[View the live case study](https://saliflearning.github.io/leathercraft-commerce-rebuild/) · [Inspect the quality workflow](https://github.com/Saliflearning/leathercraft-commerce-rebuild/actions/workflows/quality.yml)
+
 > This is not the original academic application or a live store. The catalog is fictional, the cart stays in the browser, and there is no account, checkout, payment, order, analytics, or personal-data collection.
 
 ## What this demonstrates

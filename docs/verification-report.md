@@ -6,19 +6,21 @@
 
 ## Automated release gate
 
-| Gate                          | Result | Evidence                                                                                                                                  |
-| ----------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Formatting                    | Pass   | Prettier reported all matched files formatted.                                                                                            |
-| Lint                          | Pass   | ESLint completed with zero warnings or errors.                                                                                            |
-| Type safety                   | Pass   | TypeScript project build completed with zero diagnostics.                                                                                 |
-| Unit/component behavior       | Pass   | 7 files and 21 tests passed.                                                                                                              |
-| Publication-boundary fixtures | Pass   | 2 Node tests proved clean content is accepted and restricted fixtures are rejected.                                                       |
-| Production build              | Pass   | Vite produced static HTML, CSS, and JavaScript with source maps disabled.                                                                 |
-| Browser journeys              | Pass   | 3 Chromium journeys cover the story, direct section URLs, discovery, dialog, cart, keyboard, mobile, zoom, reduced motion, and axe scans. |
-| Dependency audit              | Pass   | npm reported zero known vulnerabilities at the configured high-or-greater release threshold.                                              |
-| Secret scan                   | Pass   | Zero credential-like findings in tracked or pending public files.                                                                         |
-| Repository provenance         | Pass   | Zero private paths, historical brand markers, restricted binaries, rights-unclear media, or selected unsupported claims.                  |
-| Build provenance              | Pass   | The generated `dist` directory passed the same publication boundary.                                                                      |
+| Gate                          | Result | Evidence                                                                                                                                   |
+| ----------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Formatting                    | Pass   | Prettier reported all matched files formatted.                                                                                             |
+| Lint                          | Pass   | ESLint completed with zero warnings or errors.                                                                                             |
+| Type safety                   | Pass   | TypeScript project build completed with zero diagnostics.                                                                                  |
+| Unit/component behavior       | Pass   | 7 files and 21 tests passed.                                                                                                               |
+| Publication-boundary fixtures | Pass   | 2 Node tests proved clean content is accepted and restricted fixtures are rejected.                                                        |
+| Production build              | Pass   | Vite produced static HTML, CSS, and JavaScript with source maps disabled.                                                                  |
+| Browser journeys              | Pass   | 3 Chromium journeys cover the story, direct section URLs, discovery, dialog, cart, keyboard, mobile, zoom, reduced motion, and axe scans.  |
+| Dependency audit              | Pass   | npm reported zero known vulnerabilities at the configured high-or-greater release threshold.                                               |
+| Secret scan                   | Pass   | Zero credential-like findings in tracked or pending public files.                                                                          |
+| Repository provenance         | Pass   | Zero private paths, historical brand markers, restricted binaries, rights-unclear media, or selected unsupported claims.                   |
+| Build provenance              | Pass   | The generated `dist` directory passed the same publication boundary.                                                                       |
+| GitHub Actions                | Pass   | A clean Ubuntu run completed the full quality workflow with browser retries disabled.                                                      |
+| GitHub Pages                  | Pass   | The Pages workflow rebuilt with the repository base path, deployed over HTTPS, and the live page returned HTTP 200 with its assets loaded. |
 
 ## Interaction and presentation review
 
@@ -40,3 +42,10 @@ A structured self-review confirms that the page exposes the three phases, team c
 - Chromium is the release browser; cross-browser coverage is not claimed.
 - The application deliberately does not demonstrate backend, authentication, payment, order, deployment operations, or production commerce security.
 - Historical source material remains private, so public reviewers can inspect the claim register and methodology but not the underlying course records.
+
+## Public release
+
+- Repository: <https://github.com/Saliflearning/leathercraft-commerce-rebuild>
+- Live case study: <https://saliflearning.github.io/leathercraft-commerce-rebuild/>
+- Quality run: <https://github.com/Saliflearning/leathercraft-commerce-rebuild/actions/runs/33359770126>
+- Pages run: <https://github.com/Saliflearning/leathercraft-commerce-rebuild/actions/runs/33359770122>
