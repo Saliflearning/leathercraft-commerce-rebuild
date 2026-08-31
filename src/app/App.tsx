@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Cart } from '../components/Cart';
 import { Catalog } from '../components/Catalog';
 import { Hero } from '../components/Hero';
@@ -19,6 +19,16 @@ export function App() {
   const { summary, dispatch } = useCart();
   const [openProduct, setOpenProduct] = useState<OpenProduct | null>(null);
   const itemLabel = `${summary.totalQuantity} ${summary.totalQuantity === 1 ? 'item' : 'items'}`;
+
+  useEffect(() => {
+    const targetId = window.location.hash.slice(1);
+    if (!targetId) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById(targetId)?.scrollIntoView();
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
 
   return (
     <>
