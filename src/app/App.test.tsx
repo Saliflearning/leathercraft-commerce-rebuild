@@ -1,6 +1,6 @@
-import { render, screen, within } from '@testing-library/react';
+import { render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { App } from './App';
 
 describe('App', () => {
@@ -43,5 +43,18 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /cart · 0 items/i })).toBeInTheDocument();
     await user.click(screen.getAllByRole('button', { name: /add trailfold satchel/i })[0]!);
     expect(screen.getByRole('link', { name: /cart · 1 item$/i })).toBeInTheDocument();
+  });
+
+  it('restores the target after a same-document hash change', async () => {
+    render(<App />);
+    const target = document.getElementById('cart')!;
+    const scrollIntoView = vi.fn();
+    target.scrollIntoView = scrollIntoView;
+
+    window.history.replaceState(null, '', '#cart');
+    window.dispatchEvent(new HashChangeEvent('hashchange'));
+
+    await waitFor(() => expect(scrollIntoView).toHaveBeenCalledOnce());
+    window.history.replaceState(null, '', '/');
   });
 });

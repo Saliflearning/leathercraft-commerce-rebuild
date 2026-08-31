@@ -21,13 +21,14 @@ export function App() {
   const itemLabel = `${summary.totalQuantity} ${summary.totalQuantity === 1 ? 'item' : 'items'}`;
 
   useEffect(() => {
-    const targetId = window.location.hash.slice(1);
-    if (!targetId) return;
+    function restoreHashTarget() {
+      const targetId = window.location.hash.slice(1);
+      if (targetId) document.getElementById(targetId)?.scrollIntoView();
+    }
 
-    const frame = window.requestAnimationFrame(() => {
-      document.getElementById(targetId)?.scrollIntoView();
-    });
-    return () => window.cancelAnimationFrame(frame);
+    restoreHashTarget();
+    window.addEventListener('hashchange', restoreHashTarget);
+    return () => window.removeEventListener('hashchange', restoreHashTarget);
   }, []);
 
   return (

@@ -67,7 +67,7 @@ Open the URL printed by Vite. The application needs no environment variables, pr
 npm run verify
 ```
 
-That single command checks formatting, lint, TypeScript, 20 unit/component tests, provenance fixtures, the production build, three Chromium journeys with axe, dependency vulnerabilities, credential-like content, tracked-file provenance, and built-output provenance.
+That single command checks formatting, lint, TypeScript, 21 unit/component tests, provenance fixtures, the production build, three Chromium journeys with axe, dependency vulnerabilities, credential-like content, tracked-file provenance, and built-output provenance.
 
 ## Repository map
 

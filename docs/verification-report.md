@@ -11,7 +11,7 @@
 | Formatting                    | Pass   | Prettier reported all matched files formatted.                                                                                            |
 | Lint                          | Pass   | ESLint completed with zero warnings or errors.                                                                                            |
 | Type safety                   | Pass   | TypeScript project build completed with zero diagnostics.                                                                                 |
-| Unit/component behavior       | Pass   | 7 files and 20 tests passed.                                                                                                              |
+| Unit/component behavior       | Pass   | 7 files and 21 tests passed.                                                                                                              |
 | Publication-boundary fixtures | Pass   | 2 Node tests proved clean content is accepted and restricted fixtures are rejected.                                                       |
 | Production build              | Pass   | Vite produced static HTML, CSS, and JavaScript with source maps disabled.                                                                 |
 | Browser journeys              | Pass   | 3 Chromium journeys cover the story, direct section URLs, discovery, dialog, cart, keyboard, mobile, zoom, reduced motion, and axe scans. |
