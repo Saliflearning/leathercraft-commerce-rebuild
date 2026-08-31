@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 500" role="img" aria-labelledby="title description">
+  <title id="title">Leathercraft Commerce, Learning Rebuilt</title>
+  <desc id="description">Abstract stitched leather shapes connect three learning phases to a clean modern interface.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#182a24" />
+      <stop offset="1" stop-color="#314d3f" />
+    </linearGradient>
+    <linearGradient id="leather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d48d55" />
+      <stop offset="1" stop-color="#96532e" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="500" rx="30" fill="url(#background)" />
+  <path d="M84 362C184 258 260 402 371 282s199-22 297-97 198-36 281 32 152 39 249-63" fill="none" stroke="#f3d9af" stroke-dasharray="10 14" stroke-linecap="round" stroke-width="4" opacity=".55" />
+  <g transform="translate(82 73)">
+    <rect width="615" height="334" rx="28" fill="#f7f0e5" />
+    <circle cx="69" cy="69" r="25" fill="url(#leather)" />
+    <text x="112" y="78" fill="#1e332b" font-family="system-ui, sans-serif" font-size="27" font-weight="700">LEARNING REBUILT</text>
+    <text x="55" y="153" fill="#17241f" font-family="Georgia, serif" font-size="50" font-weight="700">Evidence first.</text>
+    <text x="55" y="211" fill="#17241f" font-family="Georgia, serif" font-size="50" font-weight="700">Craft second.</text>
+    <text x="57" y="265" fill="#4d5f57" font-family="system-ui, sans-serif" font-size="21">2019  ·  2022  ·  2023  →  clean-room rebuild</text>
+    <rect x="55" y="291" width="210" height="7" rx="4" fill="#b86f3e" />
+  </g>
+  <g transform="translate(775 82)">
+    <path d="M75 5h265c37 0 67 30 67 67v252c0 37-30 67-67 67H75c-37 0-67-30-67-67V72C8 35 38 5 75 5Z" fill="url(#leather)" />
+    <path d="M85 41h244c23 0 42 19 42 42v230c0 23-19 42-42 42H85c-23 0-42-19-42-42V83c0-23 19-42 42-42Z" fill="none" stroke="#f5d4a5" stroke-dasharray="9 10" stroke-width="4" />
+    <path d="M116 145c25-47 63-70 92-70 36 0 76 31 98 70v139H116V145Z" fill="#f6eee2" />
+    <path d="M159 146v-19c0-31 20-54 49-54s50 23 50 54v19" fill="none" stroke="#263c32" stroke-linecap="round" stroke-width="15" />
+    <circle cx="161" cy="187" r="8" fill="#b86f3e" />
+    <circle cx="255" cy="187" r="8" fill="#b86f3e" />
+    <text x="208" y="243" fill="#263c32" font-family="Georgia, serif" font-size="25" font-weight="700" text-anchor="middle">NEW WORK</text>
+  </g>
+</svg>
+

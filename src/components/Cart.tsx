@@ -15,8 +15,8 @@ export function Cart({ summary, dispatch }: CartProps) {
           <h2 id="cart-title">Demo cart</h2>
         </div>
         <p className="cart-boundary">
-          Nothing is purchased, submitted, or transmitted. This state stays in your browser and can be
-          cleared at any time.
+          Nothing is purchased, submitted, or transmitted. This state stays in your browser and can
+          be cleared at any time.
         </p>
       </div>
 
@@ -82,9 +82,15 @@ export function Cart({ summary, dispatch }: CartProps) {
             </p>
             <div className="boundary-panel">
               <strong>Intentionally ends here.</strong>
-              <p>No checkout, payment, account, shipping address, order, or analytics event exists.</p>
+              <p>
+                No checkout, payment, account, shipping address, order, or analytics event exists.
+              </p>
             </div>
-            <button type="button" className="button button--quiet" onClick={() => dispatch({ type: 'clear' })}>
+            <button
+              type="button"
+              className="button button--quiet"
+              onClick={() => dispatch({ type: 'clear' })}
+            >
               Clear demo cart
             </button>
           </aside>

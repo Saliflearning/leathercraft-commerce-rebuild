@@ -12,9 +12,10 @@ export function TechnicalRetrospective() {
         <p className="eyebrow">Ruthless retrospective</p>
         <h2 id="retrospective-title">The old build was ambitious. It was not production-ready.</h2>
         <p>
-          Search, CRUD, sessions, authentication, cart, and administration were meaningful learning. But
-          feature count hid serious weaknesses: unsafe database access, obsolete password handling, no
-          detected CSRF defense, thin documentation, no tests, and unresolved asset ownership.
+          Search, CRUD, sessions, authentication, cart, and administration were meaningful learning.
+          But feature count hid serious weaknesses: unsafe database access, obsolete password
+          handling, no detected CSRF defense, thin documentation, no tests, and unresolved asset
+          ownership.
         </p>
       </div>
 
@@ -32,8 +33,8 @@ export function TechnicalRetrospective() {
           <span className="decision-number">01</span>
           <h3>Publish the learning, not the legacy package</h3>
           <p>
-            The old source is team-authored, privacy-sensitive, and rights-unclear. This repository starts
-            clean and preserves only bounded facts.
+            The old source is team-authored, privacy-sensitive, and rights-unclear. This repository
+            starts clean and preserves only bounded facts.
           </p>
         </article>
         <article>
@@ -48,8 +49,8 @@ export function TechnicalRetrospective() {
           <span className="decision-number">03</span>
           <h3>Make quality visible</h3>
           <p>
-            Typed data, hostile-state recovery, component tests, browser journeys, accessibility checks,
-            and provenance scanning turn claims into repeatable evidence.
+            Typed data, hostile-state recovery, component tests, browser journeys, accessibility
+            checks, and provenance scanning turn claims into repeatable evidence.
           </p>
         </article>
       </div>

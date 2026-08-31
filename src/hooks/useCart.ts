@@ -1,6 +1,12 @@
 import { useEffect, useMemo, useReducer } from 'react';
 import { products } from '../data/catalog';
-import { EMPTY_CART, getCartSummary, parsePersistedCart, reduceCart, serializeCart } from '../lib/cart';
+import {
+  EMPTY_CART,
+  getCartSummary,
+  parsePersistedCart,
+  reduceCart,
+  serializeCart,
+} from '../lib/cart';
 import type { CartAction } from '../types/domain';
 
 const STORAGE_KEY = 'leathercraft-rebuild.cart.v1';

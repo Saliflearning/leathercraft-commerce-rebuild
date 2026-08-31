@@ -6,10 +6,10 @@
 
 **Status**: Approved for implementation by the user's instruction to continue through completion
 
-**Input**: Turn the recovered CCPB academic project history into an honest, high-quality GitHub
+**Input**: Turn the recovered leathercraft academic project history into an honest, high-quality GitHub
 portfolio project after deep review of the course assignments, requirements, versions, and evidence.
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Understand the Learning Journey (Priority: P1)
 
@@ -93,7 +93,7 @@ sees formatting, type, test, build, accessibility, dependency, secret, and prove
 - A release scan encountering a local path, credential-like string, restricted filename, or unsupported
   claim phrase.
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -151,7 +151,7 @@ sees formatting, type, test, build, accessibility, dependency, secret, and prove
 - **Cart Item**: A product identifier and validated quantity stored only for the local demonstration.
 - **Quality Gate**: A repeatable check with a command, expected result, and release-blocking status.
 
-## Evidence and Publication Boundaries *(mandatory)*
+## Evidence and Publication Boundaries _(mandatory)_
 
 - **Verified historical claims**: Spring 2022 team context; assigned coding-lead/contributor role;
   separate final 53/60, staged rubric 83/100, and final-project group 108/125 evidence surfaces; exact
@@ -169,7 +169,7 @@ sees formatting, type, test, build, accessibility, dependency, secret, and prove
 - **Release gate**: All quality checks pass and a deterministic scan reports zero restricted markers,
   secret findings, original binary/media files, or unsupported claim phrases in tracked content.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

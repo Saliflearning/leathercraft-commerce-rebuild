@@ -32,8 +32,8 @@ export function Catalog({ onAdd, onOpenProduct }: CatalogProps) {
           <h2 id="catalog-title">A commerce interaction, without pretending to be a store.</h2>
         </div>
         <p>
-          Eight original concepts. No accounts, tracking, checkout, customer records, or runtime network
-          requests.
+          Eight original concepts. No accounts, tracking, checkout, customer records, or runtime
+          network requests.
         </p>
       </div>
 

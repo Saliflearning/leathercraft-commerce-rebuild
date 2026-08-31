@@ -61,7 +61,7 @@ requirement; speculative commerce infrastructure is prohibited.
 
 ## Portfolio and Product Constraints
 
-- The public product is a new educational reconstruction, not the original CCPB application.
+- The public product is a new educational reconstruction, not the original academic application.
 - Product names, descriptions, prices, and illustrations MUST be fictional and rights-cleared.
 - Cart state MAY be local to the browser; checkout, payment, accounts, orders, and admin persistence
   are out of scope.

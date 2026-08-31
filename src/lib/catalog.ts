@@ -50,7 +50,8 @@ export function filterProducts(
   const categoryLabels = new Map(categories.map(({ id, label }) => [id, label]));
 
   return products.filter((product) => {
-    const matchesCategory = filters.categoryId === 'all' || product.categoryId === filters.categoryId;
+    const matchesCategory =
+      filters.categoryId === 'all' || product.categoryId === filters.categoryId;
     if (!matchesCategory) return false;
     if (!normalizedQuery) return true;
 

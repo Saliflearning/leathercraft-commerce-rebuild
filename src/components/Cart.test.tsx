@@ -26,10 +26,19 @@ describe('Cart', () => {
   });
 
   it('shows an empty state and never offers checkout', () => {
-    render(<Cart summary={getCartSummary({ version: 1, quantities: {} }, products)} dispatch={vi.fn()} />);
+    render(
+      <Cart
+        summary={getCartSummary({ version: 1, quantities: {} }, products)}
+        dispatch={vi.fn()}
+      />,
+    );
 
     expect(screen.getByRole('heading', { name: /your demo cart is empty/i })).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: /checkout|pay|purchase/i })).not.toBeInTheDocument();
-    expect(screen.getByText(/nothing is purchased, submitted, or transmitted/i)).toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /checkout|pay|purchase/i }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByText(/nothing is purchased, submitted, or transmitted/i),
+    ).toBeInTheDocument();
   });
 });

@@ -28,7 +28,8 @@ export const products: readonly Product[] = [
     id: 'trailfold-satchel',
     name: 'Trailfold Satchel',
     categoryId: 'carry',
-    description: 'A balanced cross-body form imagined for a notebook, headphones, and small essentials.',
+    description:
+      'A balanced cross-body form imagined for a notebook, headphones, and small essentials.',
     priceCents: 14800,
     stock: 6,
     features: ['Adjustable shoulder strap', 'Two interior dividers', 'Magnetic flap concept'],
@@ -94,7 +95,8 @@ export const products: readonly Product[] = [
     id: 'hearth-catchall',
     name: 'Hearth Catchall',
     categoryId: 'home',
-    description: 'A folded tray concept for keys, coins, and the small objects that arrive home with you.',
+    description:
+      'A folded tray concept for keys, coins, and the small objects that arrive home with you.',
     priceCents: 3600,
     stock: 10,
     features: ['Snap-corner form', 'Flat-pack profile', 'Soft interior concept'],

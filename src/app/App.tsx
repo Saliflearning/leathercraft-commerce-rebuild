@@ -39,7 +39,7 @@ export function App() {
         </nav>
       </header>
 
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1}>
         <div id="top" />
         <Hero />
         <LearningJourney phases={historicalPhases} notes={evidenceNotes} />
@@ -57,7 +57,8 @@ export function App() {
           <strong>New code. Fictional data. Honest boundaries.</strong>
         </div>
         <p>
-          Educational portfolio reconstruction · No store, checkout, account, analytics, or personal data.
+          Educational portfolio reconstruction · No store, checkout, account, analytics, or personal
+          data.
         </p>
       </footer>
 

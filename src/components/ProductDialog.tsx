@@ -45,7 +45,10 @@ export function ProductDialog({ product, category, opener, onAdd, onClose }: Pro
   }
 
   return (
-    <div className="dialog-backdrop" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
+    <div
+      className="dialog-backdrop"
+      onMouseDown={(event) => event.target === event.currentTarget && onClose()}
+    >
       <div
         ref={dialogRef}
         className="product-dialog"
@@ -54,7 +57,12 @@ export function ProductDialog({ product, category, opener, onAdd, onClose }: Pro
         aria-labelledby="product-dialog-title"
         onKeyDown={handleKeyDown}
       >
-        <button type="button" className="dialog-close" aria-label="Close product details" onClick={onClose}>
+        <button
+          type="button"
+          className="dialog-close"
+          aria-label="Close product details"
+          onClick={onClose}
+        >
           <span aria-hidden="true">×</span>
         </button>
         <ProductIllustration product={product} />
@@ -83,7 +91,9 @@ export function ProductDialog({ product, category, opener, onAdd, onClose }: Pro
               Add to demo cart
             </button>
           </div>
-          <p className="micro-boundary">Local demo only. No order, account, payment, or data submission.</p>
+          <p className="micro-boundary">
+            Local demo only. No order, account, payment, or data submission.
+          </p>
         </div>
       </div>
     </div>

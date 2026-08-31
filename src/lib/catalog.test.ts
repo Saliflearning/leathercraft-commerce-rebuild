@@ -13,17 +13,19 @@ describe('catalog', () => {
   });
 
   it('searches visible product and category information case-insensitively', () => {
-    expect(filterProducts(products, categories, { query: 'TRAVEL', categoryId: 'all' }).map(({ id }) => id)).toEqual([
-      'compass-passport-case',
-      'wayfarer-weekender',
-      'studio-tool-roll',
-    ]);
+    expect(
+      filterProducts(products, categories, { query: 'TRAVEL', categoryId: 'all' }).map(
+        ({ id }) => id,
+      ),
+    ).toEqual(['compass-passport-case', 'wayfarer-weekender', 'studio-tool-roll']);
   });
 
   it('combines category and search controls and returns a stable empty result', () => {
-    expect(filterProducts(products, categories, { query: 'A5', categoryId: 'desk' }).map(({ id }) => id)).toEqual([
-      'atlas-folio',
-    ]);
-    expect(filterProducts(products, categories, { query: 'weekender', categoryId: 'home' })).toEqual([]);
+    expect(
+      filterProducts(products, categories, { query: 'A5', categoryId: 'desk' }).map(({ id }) => id),
+    ).toEqual(['atlas-folio']);
+    expect(
+      filterProducts(products, categories, { query: 'weekender', categoryId: 'home' }),
+    ).toEqual([]);
   });
 });

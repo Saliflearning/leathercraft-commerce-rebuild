@@ -1,6 +1,7 @@
 export type CategoryId = 'carry' | 'desk' | 'travel' | 'home';
 export type ProductAccent = 'clay' | 'gold' | 'sage' | 'ink';
-export type ProductShape = 'satchel' | 'folio' | 'tray' | 'sleeve' | 'roll' | 'duffel' | 'passport' | 'mat';
+export type ProductShape =
+  'satchel' | 'folio' | 'tray' | 'sleeve' | 'roll' | 'duffel' | 'passport' | 'mat';
 
 export interface Category {
   readonly id: CategoryId;

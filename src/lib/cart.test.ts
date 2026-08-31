@@ -6,8 +6,16 @@ describe('cart', () => {
   it('adds, decreases, removes, and clears allowlisted products', () => {
     const added = reduceCart(EMPTY_CART, { type: 'add', productId: 'trailfold-satchel' }, products);
     const twice = reduceCart(added, { type: 'add', productId: 'trailfold-satchel' }, products);
-    const decreased = reduceCart(twice, { type: 'decrease', productId: 'trailfold-satchel' }, products);
-    const removed = reduceCart(decreased, { type: 'decrease', productId: 'trailfold-satchel' }, products);
+    const decreased = reduceCart(
+      twice,
+      { type: 'decrease', productId: 'trailfold-satchel' },
+      products,
+    );
+    const removed = reduceCart(
+      decreased,
+      { type: 'decrease', productId: 'trailfold-satchel' },
+      products,
+    );
 
     expect(twice.quantities['trailfold-satchel']).toBe(2);
     expect(decreased.quantities['trailfold-satchel']).toBe(1);
@@ -16,7 +24,11 @@ describe('cart', () => {
   });
 
   it('clamps integer quantities to fictional stock and rejects unknown products', () => {
-    const clamped = reduceCart(EMPTY_CART, { type: 'set', productId: 'wayfarer-weekender', quantity: 99 }, products);
+    const clamped = reduceCart(
+      EMPTY_CART,
+      { type: 'set', productId: 'wayfarer-weekender', quantity: 99 },
+      products,
+    );
     const unknown = reduceCart(clamped, { type: 'add', productId: 'missing-product' }, products);
 
     expect(clamped.quantities['wayfarer-weekender']).toBe(3);
@@ -26,7 +38,7 @@ describe('cart', () => {
   it('recovers only valid, current cart data from untrusted storage', () => {
     const raw = JSON.stringify({
       version: 1,
-      quantities: { 'atlas-folio': 2.8, 'wayfarer-weekender': 200, obsolete: 4, '__proto__': 5 },
+      quantities: { 'atlas-folio': 2.8, 'wayfarer-weekender': 200, obsolete: 4, __proto__: 5 },
     });
 
     expect(parsePersistedCart(raw, products)).toEqual({

@@ -8,7 +8,10 @@ describe('Catalog', () => {
     const user = userEvent.setup();
     render(<Catalog onAdd={vi.fn()} onOpenProduct={vi.fn()} />);
 
-    await user.type(screen.getByRole('searchbox', { name: /search fictional products/i }), 'weekender');
+    await user.type(
+      screen.getByRole('searchbox', { name: /search fictional products/i }),
+      'weekender',
+    );
     expect(screen.getByText('1 product')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Wayfarer Weekender' })).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Trailfold Satchel' })).not.toBeInTheDocument();
@@ -22,7 +25,10 @@ describe('Catalog', () => {
     const user = userEvent.setup();
     render(<Catalog onAdd={vi.fn()} onOpenProduct={vi.fn()} />);
 
-    await user.type(screen.getByRole('searchbox', { name: /search fictional products/i }), 'nothing matches');
+    await user.type(
+      screen.getByRole('searchbox', { name: /search fictional products/i }),
+      'nothing matches',
+    );
     expect(screen.getByRole('heading', { name: /no crafted concepts found/i })).toBeInTheDocument();
     await user.click(screen.getAllByRole('button', { name: /clear search and category/i }).at(-1)!);
     expect(screen.getByText('8 products')).toBeInTheDocument();
@@ -36,7 +42,10 @@ describe('Catalog', () => {
 
     const details = screen.getByRole('button', { name: /details for trailfold satchel/i });
     await user.click(details);
-    expect(onOpenProduct).toHaveBeenCalledWith(expect.objectContaining({ id: 'trailfold-satchel' }), details);
+    expect(onOpenProduct).toHaveBeenCalledWith(
+      expect.objectContaining({ id: 'trailfold-satchel' }),
+      details,
+    );
 
     await user.click(screen.getByRole('button', { name: /add trailfold satchel/i }));
     expect(onAdd).toHaveBeenCalledWith('trailfold-satchel');
