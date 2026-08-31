@@ -1,0 +1,31 @@
+# Durable workspace metadata and private evidence areas
+00_context/
+02_assets/
+03_exports/
+graphify-out/
+AGENTS.md
+PROJECT_MAP.md
+.agents/
+.claude/
+
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
