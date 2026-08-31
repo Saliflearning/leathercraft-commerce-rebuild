@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.agents/
+.specify/
+00_context/
+02_assets/
+03_exports/
+graphify-out/
+package-lock.json
